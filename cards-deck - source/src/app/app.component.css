@@ -1,0 +1,30 @@
+.card{
+    width: 36px;
+    height: 48px;
+}
+.footer{
+    bottom: 0px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    
+}
+.footer-img{
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.cards-container{
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.75);
+    position: fixed;
+    padding: 10px;
+    
+}
+.right-panel{
+    border-left:1px solid red;
+    width: 100%;
+    height: 100%;
+    color:#fff;
+}

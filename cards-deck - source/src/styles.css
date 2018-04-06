@@ -1,0 +1,23 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+bodyx{
+    padding:0;
+    margin: 0;
+}
+.container{
+    padding: 0;
+    margin: 0;
+    top: 55px;
+    position: absolute;
+    max-width: 100%;
+    height: 90%;
+    background-image: url("./assets/images//cards.jpg");
+    background-size: cover;
+}
+.navbar-brand {
+    color:#fff;
+}
+.navbar-brand:hover{
+    color:rgb(182, 147, 147);
+}

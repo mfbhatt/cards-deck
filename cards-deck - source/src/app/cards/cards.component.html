@@ -1,0 +1,17 @@
+<div class="form-group">
+  <button (click)="toggle();" type="button" class="btn btn-danger btn-sm">Draw</button>
+  <button (click)="shuffle();" type="button" class="btn btn-danger btn-sm">Shuffle</button>  
+  <button (click)="sortCHTP();" type="button" class="btn btn-danger btn-sm">CHTP</button>
+  <button (click)="sortHCTP();" type="button" class="btn btn-danger btn-sm">HCTP</button>
+  <button (click)="sortHTCP();" type="button" class="btn btn-danger btn-sm">HTCP</button>
+  <button (click)="sortHTPC();" type="button" class="btn btn-danger btn-sm">HTPC</button>
+  
+</div>
+
+<div class="cards-wrapper" dropDirective (dropEvent)="addDropItem($event)">
+  <div *ngFor="let card of cards; let i = index" [attr.data-index]="i" class="card-container" @fade [dragDirective]='item' [dragHightlight]="'highlight'" (startDrag)="startDrag(card)">    
+      <div [ngClass]="[card.style]" [@popOverState]="stateName" >
+      <div class="face"></div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,5 @@
+1. Extract the source code.
+2. open the command prompt from the extracted location and run the following command.
+	npm install
+3. Once the installation is done run the following command to run the project.
+	npm serve --open
